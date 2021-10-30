@@ -105,7 +105,7 @@ home_keyboard_pm = InlineKeyboardMarkup(
     [
         [
             InlineKeyboardButton(
-                text="Commands ❓", callback_data="bot_commands"
+                text="Help&Command 🗞️", callback_data="bot_commands"
             ),
             InlineKeyboardButton(
                 text="support Group 🔔",
@@ -141,7 +141,7 @@ keyboard = InlineKeyboardMarkup(
     [
         [
             InlineKeyboardButton(
-                text="Help ❓",
+                text="Help&Command 🗞️",
                 url=f"t.me/{BOT_USERNAME}?start=help",
             ),
             InlineKeyboardButton(
@@ -253,10 +253,10 @@ async def help_parser(name, keyboard=None):
     if not keyboard:
         keyboard = InlineKeyboardMarkup(paginate_modules(0, HELPABLE, "help"))
     return (
-        """Hello {first_name}, My name is {bot_name}.
-I'm a group management bot with some useful features.
-You can choose an option below, by clicking a button.
-Also you can ask anything in Support Group.
+        """Hello {first_name}, Kei hi {bot_name} ka ni a.
+I group enkawl tu atan min hmang thei ang.
+A hnuai a Button te khu hmet la ka tih theih te i hre thei ang.
+Buaina leh harsatna i tawh chuan Support Group ah ilo sawi thin dawn nia.
 """.format(
             first_name=name,
             bot_name=BOT_NAME,
@@ -292,14 +292,13 @@ async def help_button(client, query):
     back_match = re.match(r"help_back", query.data)
     create_match = re.match(r"help_create", query.data)
     top_text = f"""
-Hello {query.from_user.first_name}, My name is {BOT_NAME}.
-I'm a group management bot with some usefule features.
-You can choose an option below, by clicking a button.
-Also you can ask anything in Support Group.
-
+Hello {query.from_user.first_name}, ka hming chu {BOT_NAME} ani a.
+I group enkawl tu atan min hmang thei ang.
+A hnuai a Button te khu hmet la ka tih theih te i hre thei ang.
+Buaina leh harsatna i tawh chuan Support Group ah ilo sawi thin dawn nia.
 General command are:
- - /start: Start the bot
- - /help: Give this message
+ - /start: Bot start na
+ - /help: Bot hnathawh theih hriatna
  """
     if mod_match:
         module = mod_match.group(1)
