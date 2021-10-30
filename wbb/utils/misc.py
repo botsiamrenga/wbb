@@ -65,7 +65,7 @@ def paginate_modules(page_n, module_dict, prefix, chat=None):
             ]
         )
 
-    pairs = list(zip(modules[2::4], modules[3::4], modules[4::4]))
+    pairs = list(zip(modules[::3], modules[1::3], modules[2::3]))
     i = 0
     for m in pairs:
         for _ in m:
@@ -80,7 +80,7 @@ def paginate_modules(page_n, module_dict, prefix, chat=None):
             )
         )
 
-    COLUMN_SIZE = 11
+    COLUMN_SIZE = 4
 
     max_num_pages = ceil(len(pairs) / COLUMN_SIZE)
     modulo_page = page_n % max_num_pages
@@ -96,7 +96,7 @@ def paginate_modules(page_n, module_dict, prefix, chat=None):
                     callback_data="{}_prev({})".format(prefix, modulo_page),
                 ),
                 EqInlineKeyboardButton(
-                    "Back",
+                    "🔙 Back",
                     callback_data="{}_home({})".format(prefix, modulo_page),
                 ),
                 EqInlineKeyboardButton(
