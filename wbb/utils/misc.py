@@ -70,13 +70,13 @@ def paginate_modules(page_n, module_dict, prefix, chat=None):
     for m in pairs:
         for _ in m:
             i += 1
-    if len(modules) - i == 1:
-        pairs.append((modules[-1],))
+    if len(modules) - i == 2:
+        pairs.append((modules[-2],))
     elif len(modules) - i == 2:
         pairs.append(
             (
                 modules[-3],
-                modules[-1],
+                modules[-2],
             )
         )
 
