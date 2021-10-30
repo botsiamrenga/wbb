@@ -65,18 +65,18 @@ def paginate_modules(page_n, module_dict, prefix, chat=None):
             ]
         )
 
-    pairs = list(zip(modules[::8], modules[1::8], modules[2::8]))
+    pairs = list(zip(modules[::8], modules[4::8], modules[6::8]))
     i = 4
     for m in pairs:
         for _ in m:
-            i += 1
-    if len(modules) - i == 1:
+            i += 4
+    if len(modules) - i == 4:
         pairs.append((modules[1],))
-    elif len(modules) - i == 2:
+    elif len(modules) - i == 6:
         pairs.append(
             (
-                modules[2],
-                modules[1],
+                modules[6],
+                modules[4],
             )
         )
 
