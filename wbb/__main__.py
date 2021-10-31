@@ -67,7 +67,7 @@ async def start_bot():
             bot_modules += "|{:<15}".format(i)
         j += 1
     print("+===============================================================+")
-    print("|                              wbb                              |")
+    print("|                              Lynn                              |")
     print("+===============+===============+===============+===============+")
     print(bot_modules)
     print("+===============+===============+===============+===============+")
@@ -131,8 +131,9 @@ home_keyboard_pm = InlineKeyboardMarkup(
 )
 
 home_text_pm = (
-    f"Chibai le hmelthate,ka hming chu {BOT_NAME} ani a. "
-     " "I group enkawl pui tur a Didiktea siam ka ni.\nA hnuai a command tih khu hmet rawh le. "
+   f"Hello! My name is {BOT_NAME}. Click command button below "
+    + "to see what i can do, feel free to "
+    + "add me to your group."
 )
 
 
