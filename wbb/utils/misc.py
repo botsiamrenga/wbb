@@ -1,14 +1,18 @@
 """
 MIT License
+
 Copyright (c) 2021 TheHamkerCat
+
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
 in the Software without restriction, including without limitation the rights
 to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
 copies of the Software, and to permit persons to whom the Software is
 furnished to do so, subject to the following conditions:
+
 The above copyright notice and this permission notice shall be included in all
 copies or substantial portions of the Software.
+
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
 IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
 FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
@@ -61,8 +65,8 @@ def paginate_modules(page_n, module_dict, prefix, chat=None):
             ]
         )
 
-    pairs = list(zip(modules[::4], modules[1::4], modules[2::4]))
-    i = 4
+    pairs = list(zip(modules[::3], modules[1::3], modules[2::3]))
+    i = 0
     for m in pairs:
         for _ in m:
             i += 1
@@ -71,12 +75,12 @@ def paginate_modules(page_n, module_dict, prefix, chat=None):
     elif len(modules) - i == 2:
         pairs.append(
             (
-                modules[-1],
+                modules[-2],
                 modules[-1],
             )
         )
 
-    COLUMN_SIZE = 11
+    COLUMN_SIZE = 4
 
     max_num_pages = ceil(len(pairs) / COLUMN_SIZE)
     modulo_page = page_n % max_num_pages
