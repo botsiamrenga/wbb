@@ -305,7 +305,7 @@ I group enkawl tu atan min hmang thei ang.
         await query.message.edit(
             text=text,
             reply_markup=InlineKeyboardMarkup(
-                [[InlineKeyboardButton("back", callback_data="help_back")]]
+                [[InlineKeyboardButton("🔙 Back", callback_data="help_back")]]
             ),
             disable_web_page_preview=True,
         )
