@@ -164,7 +164,7 @@ keyboard = InlineKeyboardMarkup(
 async def start(_, message):
     if message.chat.type != "private":
         return await message.reply(
-            "Pm Me For More Details.", reply_markup=keyboard
+            "Min hruatchian duh chuan Private ah minlo be rawh.", reply_markup=keyboard
         )
     if len(message.text.split()) > 1:
         name = (message.text.split(None, 1)[1]).lower()
@@ -215,11 +215,11 @@ async def help_command(_, message):
                 )
             else:
                 await message.reply(
-                    "PM Me For More Details.", reply_markup=keyboard
+                    "Min hriatchian duh chuan private ah minlo be rawh.", reply_markup=keyboard
                 )
         else:
             await message.reply(
-                "Pm Me For More Details.", reply_markup=keyboard
+                "Min hriatchian duh chuan private ah minlo be rawh.", reply_markup=keyboard
             )
     else:
         if len(message.command) >= 2:
