@@ -114,11 +114,11 @@ home_keyboard_pm = InlineKeyboardMarkup(
         ],
         [
             InlineKeyboardButton(
-                text="System Stats 🖥",
+                text="💻 System Stats",
                 callback_data="stats_callback",
             ),
             InlineKeyboardButton(
-                text="Support channel 🔔", url="http://t.me/androidusersmizo"
+                text="🔔 Support channel", url="http://t.me/androidusersmizo"
             ),
         ],
         [
@@ -151,7 +151,7 @@ keyboard = InlineKeyboardMarkup(
         ],
         [
             InlineKeyboardButton(
-                text="System Stats 💻",
+                text="💻 System Stats",
                 callback_data="stats_callback",
             ),
             InlineKeyboardButton(text="🔔 Support channel", url="t.me/androidusersmizo"),
