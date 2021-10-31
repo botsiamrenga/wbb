@@ -138,7 +138,7 @@ async def getid(client, message):
     message_id = message.message_id
     reply = message.reply_to_message
 
-    text = f"**[Chat ID:]({message.link})** `{message_id}`\n"
+    text = f"**[Message ID:]({message.link})** `{message_id}`\n"
     text += f"**[Your ID:](tg://user?id={your_id})** `{your_id}`\n"
 
     if not message.command:
