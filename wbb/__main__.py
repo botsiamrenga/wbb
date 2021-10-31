@@ -105,10 +105,10 @@ home_keyboard_pm = InlineKeyboardMarkup(
     [
         [
             InlineKeyboardButton(
-                text="Help&Command 🗞️", callback_data="bot_commands"
+                text="📚 Command", callback_data="bot_commands"
             ),
             InlineKeyboardButton(
-                text="support Group 🔔",
+                text="💬 support Group",
                 url="https://t.me/puituflynn",
             ),
         ],
@@ -118,12 +118,12 @@ home_keyboard_pm = InlineKeyboardMarkup(
                 callback_data="stats_callback",
             ),
             InlineKeyboardButton(
-                text="Support channel 👨", url="http://t.me/androidusersmizo"
+                text="Support channel 🔔", url="http://t.me/androidusersmizo"
             ),
         ],
         [
             InlineKeyboardButton(
-                text="Add Me To Your Group 🎉",
+                text="➕ Add Me To Your Group 🔘",
                 url=f"http://t.me/{BOT_USERNAME}?startgroup=new",
             )
         ],
@@ -141,11 +141,11 @@ keyboard = InlineKeyboardMarkup(
     [
         [
             InlineKeyboardButton(
-                text="Help&Command 🗞️",
+                text="📚 Command",
                 url=f"t.me/{BOT_USERNAME}?start=help",
             ),
             InlineKeyboardButton(
-                text="Support Group 🔔",
+                text="💬 Support Group",
                 url="https://t.me/puituflynn",
             ),
         ],
@@ -154,7 +154,7 @@ keyboard = InlineKeyboardMarkup(
                 text="System Stats 💻",
                 callback_data="stats_callback",
             ),
-            InlineKeyboardButton(text="Support channel 👨", url="t.me/androidusersmizo"),
+            InlineKeyboardButton(text="🔔 Support channel", url="t.me/androidusersmizo"),
         ],
     ]
 )
