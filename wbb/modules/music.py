@@ -41,8 +41,9 @@ from wbb.utils.pastebin import paste
 __MODULE__ = "Music"
 __HELP__ = """
 /ytmusic [link] To Download Music From Various Websites Including Youtube. [SUDOERS]
-/saavn [query] To Download Music From Saavn.
-/lyrics [query] To Get Lyrics Of A Song.
+/saavn [song name] To Download Music From Saavn.
+/lyrics [song name] To Get Lyrics Of A Song.
+/video <song name>*:* uploads the video song in it's best quality available.
 """
 
 is_downloading = False
