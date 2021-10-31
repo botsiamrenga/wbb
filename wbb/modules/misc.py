@@ -152,7 +152,7 @@ async def getid(client, message):
         except Exception:
             return await eor(message, text="This user doesn't exist.")
 
-    text += f"**[Chat ID:](https://t.me/{chat.username})** `{chat.id}`\n\n"
+    text += f"**[GROUP ID:](https://t.me/{chat.username})** `{chat.id}`\n\n"
     if not getattr(reply, "empty", True):
         text += (
             f"**[Replied Message ID:]({reply.link})** `{reply.message_id}`\n"
