@@ -83,12 +83,7 @@ def paginate_modules(page_n, module_dict, prefix, chat=None):
     COLUMN_SIZE = 20
 
     max_num_pages = ceil(len(pairs) / COLUMN_SIZE)
-    modulo_page = page_n % max_num_pages
-    
-    else:
-        pairs += [[EqInlineKeyboardButton("「 GO BACK TO MAIN MENU 」", callback_data="help_back")]]
-        
-    return pairs    
+    modulo_page = page_n % max_num_pages 
 
     # can only have a certain amount of buttons side by side
     if len(pairs) > COLUMN_SIZE:
