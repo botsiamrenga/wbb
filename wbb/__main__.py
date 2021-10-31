@@ -131,9 +131,11 @@ home_keyboard_pm = InlineKeyboardMarkup(
 )
 
 home_text_pm = (
-    f"Hey there! My name is {BOT_NAME}. I can manage your "
-    + "group with lots of useful features, feel free to "
-    + "add me to your group."
+    f『Chibai le hmelthate🥰, Kei hi *Lynn chawngthu* ka ni a, 』
+I group enkawl pui tur che a duhtaka *Didiktea* siam ka ni!
+ 
+`A hnuai a` *📚 Commands* `button khu hmet la ka thil tihtheih te i hre dawn nia.
+*『Thildang tihtheih tamtak kala nei a, i group ah min add in min han hmang chhin la i hre mai ang.』
 )
 
 
