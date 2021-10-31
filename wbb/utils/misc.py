@@ -105,8 +105,11 @@ def paginate_modules(page_n, module_dict, prefix, chat=None):
                 ),
             )
         ]
+   
+   else:
+        pairs += [[EqInlineKeyboardButton("「 GO BACK TO MAIN MENU 」", callback_data="help_back")]]
 
-    return pairs
+   return pairs
 
 
 def is_module_loaded(name):
