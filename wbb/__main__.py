@@ -132,8 +132,7 @@ home_keyboard_pm = InlineKeyboardMarkup(
 
 home_text_pm = (
     f"Chibai le hmelthate,ka hming chu {BOT_NAME} ani a. "
-     \n" "I group enkawl pui tur a Didiktea siam ka ni.A.hnuai a command tih khu hmet rawh le. "
-     \n"KAN SAKRUANG MIZORAM TAN."
+     " "I group enkawl pui tur a Didiktea siam ka ni.\nA hnuai a command tih khu hmet rawh le. "
 )
 
 
