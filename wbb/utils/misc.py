@@ -81,13 +81,13 @@ def paginate_modules(page_n, module_dict, prefix, chat=None):
     max_num_pages = ceil(len(pairs) / COLUMN_SIZE)
     modulo_page = page_n % max_num_pages
 
-        pairs = pairs[EqInlineKeyboardButton(
-                          "「 GO BACK TO MAIN MENU 」" ,
+    pairs = pairs[EqInlineKeyboardButton(
+                      "「 GO BACK TO MAIN MENU 」" ,
                           
-                          callback_data="{}_home({})".format(prefix, modulo_page) ,
-                    ),
-                ) 
-            ]
+                      callback_data="{}_home({})".format(prefix, modulo_page) ,
+               ),
+          ) 
+    ]
 
     return pairs
 
