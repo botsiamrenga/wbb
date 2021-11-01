@@ -85,7 +85,7 @@ def paginate_modules(page_n, module_dict, prefix, chat=None):
                       "「 GO BACK TO MAIN MENU 」" ,
                           
                       callback_data="{}_home({})".format(prefix
-                          prefix, modulo_page) ,
+                          prefix, chat, x.__MODULE__.lower()
 
                 ) 
             ]
