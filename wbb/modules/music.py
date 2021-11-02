@@ -43,7 +43,6 @@ __HELP__ = """
 /ytmusic [link] To Download Music From Various Websites Including Youtube. [SUDOERS]
 /saavn [song name] To Download Music From Saavn.
 /lyrics [song name] To Get Lyrics Of A Song.
-/video [song name] uploads the video song in it's best quality available.
 """
 
 is_downloading = False
