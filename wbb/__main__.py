@@ -109,7 +109,7 @@ home_keyboard_pm = InlineKeyboardMarkup(
             ),
             InlineKeyboardButton(
                 text="💬 support Group",
-                url="https://t.me/puituflynn",
+                url="https://t.me/lynnsupportgroup",
             ),
         ],
         [
