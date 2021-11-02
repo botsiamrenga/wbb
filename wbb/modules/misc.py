@@ -36,7 +36,7 @@ from wbb.utils.pastebin import paste
 
 __MODULE__ = "Misc"
 __HELP__ = """
-/asq
+/Lynn
     Ask a question
 
 /commit
@@ -91,7 +91,7 @@ __HELP__ = """
 ASQ_LOCK = Lock()
 
 
-@app.on_message(filters.command("asq") & ~filters.edited)
+@app.on_message(filters.command("Lynn") & ~filters.edited)
 async def asq(_, message):
     err = "Reply to text message or pass the question as argument"
     if message.reply_to_message:
