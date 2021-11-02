@@ -118,7 +118,7 @@ home_keyboard_pm = InlineKeyboardMarkup(
                 callback_data="stats_callback",
             ),
             InlineKeyboardButton(
-                text="🔔 Support channel", url="http://t.me/androidusersmizo"
+                text="🙋 Developer", url="http://t.me/Didiktea"
             ),
         ],
         [
@@ -164,7 +164,7 @@ keyboard = InlineKeyboardMarkup(
 async def start(_, message):
     if message.chat.type != "private":
         return await message.reply(
-            "Min hruatchian duh chuan Private ah minlo be rawh.", reply_markup=keyboard
+            "Min hriatchian duh chuan Private ah minlo be rawh.", reply_markup=keyboard
         )
     if len(message.text.split()) > 1:
         name = (message.text.split(None, 1)[1]).lower()
